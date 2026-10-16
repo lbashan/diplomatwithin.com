@@ -6,7 +6,7 @@ Created for this project with the built-in ImageGen tool on October 15, 2026. Th
 - `island-dawn-mobile.webp`: 800 × 533 responsive derivative, WebP quality 82.
 - `garden-path.webp`: original 1536 × 1024 garden artwork, WebP quality 84.
 
-The PNG originals remain in the generating conversation's image library. Only optimized WebP derivatives are used by the site. The hero source uses `srcset` and high fetch priority; garden imagery loads lazily. The portrait placeholder remains an original inline SVG and is clearly labeled.
+The PNG originals remain in the generating conversation's image library. Only optimized WebP derivatives are used by the site. The hero source uses `srcset` and high fetch priority; garden imagery loads lazily. The About portrait is separate: it is an owner-supplied photograph, optimized without retouching; see `README.md` in this folder.
 
 ## Hero generation prompt
 
@@ -15,3 +15,11 @@ Use case: illustration-story. Asset type: ultrawide cinematic hero landscape art
 ## Garden generation prompt
 
 Use case: photorealistic-natural. Create an original high-end editorial landscape artwork for a warm personal life advisory website. Wide 3:2 image: a quiet narrow path through a lush Hawaiʻi-inspired tropical garden, gently curving from foreground left toward a glimpse of open blue ocean in upper right, dappled early morning sunlight through graceful leaves, rich moss and fern texture, naturally weathered stone, warm earthy sand and forest greens. Inviting and hopeful, a tangible sense of making room for life and possibilities, refined cinematic travel-journal feeling, subtly painterly atmospheric photographic realism. Focus on organic greenery and beautiful light, no people, no buildings, no words, no logos, no watermark. No generic wellness symbols, no lotus, no saturated neon greens, no fantasy. This is conceptual generated scenery, not a claim of a specific real location. Composition should work as a large cropped portrait insert as well as wide background.
+
+## Global quote artwork
+
+`global-perspective.webp` replaces the quote's garden background with original AI-created conceptual travel artwork: a globe, atlas, brass compass, and a softly seen city. Generated with the built-in ImageGen tool; no portrait or other reference images were sent. The user-supplied portrait was only optimized locally.
+
+Exact generation prompt:
+
+Create an original wide cinematic editorial still-life artwork for the quote section of a sophisticated personal life advisory website with a former diplomat's global perspective. Horizontal 3:2 composition. An elegant worn globe with accurate recognizable continental silhouettes, open vintage world atlas, folded cream linen, and a small understated brass compass on a dark warm wooden desk next to a tall window; soft warm late-afternoon light and shadows, a softly out-of-focus cosmopolitan old-world city visible through the window. Intimate, thoughtful, worldly and inspirational, a life of curiosity and possibility, not corporate consulting. Deep ocean teal and forest shadows, warm sand paper, patinated brass details. Globe prominently positioned in right third; left and middle mostly uncluttered dark atlas/paper texture with low detail and ample calm space for ivory quote overlay. Photographic realism with subtle fine-art atmosphere and rich tactile texture. No people, no plants, no nature scene, no flags, no passports, no coffee, no luggage, no readable text or lettering, no logos, no watermark. Not a collage, not a digital tech network, not glowing globe. This is original AI-created conceptual art.

@@ -1,11 +1,7 @@
 # Portrait and optional imagery
 
-The current page deliberately uses a labeled illustrated portrait placeholder. It is not a generated likeness of Lyla.
+`lyla-portrait.webp` uses the owner-supplied **Relaxed Hawai‘i garden headshot.png**, selected for its warm expression and natural, approachable framing. It was resized proportionally to 900 × 1200 and encoded as WebP for performance. No retouching, face generation, or color alterations were applied. The original remains in the owner's Downloads folder. Do not replace the portrait with an invented likeness.
 
-To add an approved portrait:
-1. Save an optimized, legally usable image as `public/images/lyla-portrait.webp` (or `.avif` / `.jpg`). Aim for about 780 × 1000 pixels and below 200 KB where practical. Keep the face clear when cropped at smaller widths.
-2. In `src/App.tsx`, replace the contents of `figure.portrait-placeholder` with an `<img src="/images/lyla-portrait.webp" alt="Lyla Bashan" width="780" height="1000" loading="lazy" decoding="async" />`.
-3. Remove the placeholder label and caption. Add `.portrait-placeholder img { width:100%; height:100%; object-fit:cover; }` and remove the figure's `:after` overlay if it obscures the photograph.
-4. Check the crop on mobile and desktop, ensure the person has approved the photo, and record any photographer attribution/license requirements here.
+To replace it later, add an approved 3:4 portrait as `public/images/lyla-portrait.webp`, update its intrinsic dimensions in `src/App.tsx` if needed, and verify the face and crop at mobile and desktop widths. Record any photographer attribution requirements here.
 
-Optional licensed Hawaiʻi landscape photography can replace the hero illustration. Store optimized files here, verify rights and attribution, provide appropriate alt text, and specify dimensions. Do not hotlink images or reuse photos from the reference site without permission.
+The site's other imagery is original AI-created conceptual artwork, with provenance and generation prompts in `ASSETS.md`. It is stored locally, not hotlinked or reused from the reference site.

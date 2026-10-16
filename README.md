@@ -39,11 +39,11 @@ scripts/check-copy.mjs     Copy and deployment-contract verification
 netlify.toml               Build settings, Node version, security headers
 ```
 
-Approved copy was transcribed verbatim from the supplied master prompt. The duplicate About heading pair is displayed once. Editorial CTA brackets and the `Contact form:` instruction are omitted from visible prose. The single-page reading order follows the source. Site controls, image-placeholder labels, and honest form feedback are functional UI text.
+Approved copy was transcribed verbatim from the supplied master prompt. The duplicate About heading pair is displayed once. Editorial CTA brackets and the `Contact form:` instruction are omitted from visible prose. The single-page reading order follows the source. Site controls, artwork labels, and honest form feedback are functional UI text.
 
 ## Visual assets and fonts
 
-The hero and garden imagery are original AI-created landscape artworks, optimized as locally hosted WebP assets. They evoke island coastlines and gardens without claiming to document a specific real location. The hero image is visibly identified as AI-created artwork; the garden image has an equivalent accessible description. The illustrated portrait placeholder is not a depiction of Lyla. See `public/images/ASSETS.md` for generation prompts and provenance. The portrait is clearly labeled as a placeholder. Add a real portrait following `public/images/README.md`. Licensed photography is optional; the site is complete without it. No images, code, or branding assets were copied from the broad reference website.
+The hero and garden imagery are original AI-created landscape artworks, optimized as locally hosted WebP assets. They evoke island coastlines and gardens without claiming to document a specific real location. The hero image is visibly identified as AI-created artwork; the garden image has an equivalent accessible description. The About portrait is the owner-supplied relaxed garden headshot, optimized without retouching. See `public/images/ASSETS.md` for generation prompts and provenance. Portrait source and replacement instructions are in `public/images/README.md`. Licensed photography is optional; the site is complete without it. No images, code, or branding assets were copied from the broad reference website.
 
 Cormorant Garamond and DM Sans are bundled locally through Fontsource packages, with only Latin weights used by the page imported. They are licensed under the SIL Open Font License; see the license notices distributed in `public/licenses/`. No third-party font requests are made. System fallbacks are available.
 
@@ -53,7 +53,7 @@ Cormorant Garamond and DM Sans are bundled locally through Fontsource packages, 
 2. In Netlify, choose **Add new project → Import an existing project → GitHub** and select `lbashan/diplomatwithin.com`. Authorize repository access if requested.
 3. Set the production branch to the branch you want to preview. Build command: `npm run build`. Publish directory: `dist`. Node 22 is configured in `netlify.toml` and `.nvmrc`.
 4. Enable **Deploy Previews** for pull requests. Netlify can build the pull request once its GitHub integration is installed. A PR alone does not automatically create a preview without this integration.
-5. Deploy to the generated `.netlify.app` URL first. Check desktop/mobile layouts, anchor navigation, keyboard focus, FAQ disclosures, portrait placeholder, and the form. No domain or DNS change is necessary for review.
+5. Deploy to the generated `.netlify.app` URL first. Check desktop/mobile layouts, anchor navigation, keyboard focus, FAQ disclosures, portrait crop, and the form. No domain or DNS change is necessary for review.
 6. Confirm the copy and layout with Lyla before connecting a live domain.
 
 The canonical URL and sitemap intentionally identify `https://diplomatwithin.com/`. Keep Netlify review sites out of search indexes using Netlify's deploy-context indexing controls / `X-Robots-Tag: noindex` for deploy previews. Do not point search engines or the public domain at a preview.
@@ -84,7 +84,6 @@ No live submission or notification delivery has been verified during local devel
 
 ## Remaining owner inputs
 
-- A real, approved portrait of Lyla (optional before initial review).
 - Optional licensed landscape photos and suitable alt text.
 - Netlify import / preview deployment and form notification configuration.
 - Final review before merging, domain/DNS connection, or production launch.

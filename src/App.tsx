@@ -11,24 +11,6 @@ function Arrow() { return <span aria-hidden="true" className="arrow">↗</span> 
 function IntroLink({ light = false }: { light?: boolean }) {
   return <a className={`cta ${light ? 'cta-light' : ''}`} href="#contact">{text(3).slice(1, -1)}<Arrow /></a>
 }
-function Horizon({ portrait = false }: { portrait?: boolean }) {
-  return <svg className={`horizon-art ${portrait ? 'portrait-art' : ''}`} viewBox="0 0 800 1000" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-    <defs>
-      <linearGradient id={portrait ? 'sky-p' : 'sky'} x2="0" y2="1"><stop stopColor="#e9dfcd"/><stop offset="1" stopColor="#c3d0c3"/></linearGradient>
-      <linearGradient id={portrait ? 'water-p' : 'water'} x2="0.8" y2="1"><stop stopColor="#728f8a"/><stop offset="1" stopColor="#244c58"/></linearGradient>
-    </defs>
-    <path fill={`url(#${portrait ? 'sky-p' : 'sky'})`} d="M0 0h800v1000H0z"/>
-    <circle cx="540" cy="310" r="89" fill="#f4ecd9"/>
-    <path fill="#a5b5a4" d="M0 535 Q150 410 300 495 T800 470 V1000H0z"/>
-    <path fill={`url(#${portrait ? 'water-p' : 'water'})`} d="M0 567 Q340 520 800 580V1000H0z"/>
-    <path fill="#526f61" d="M0 530 Q105 550 170 665 Q250 730 340 747 Q450 785 392 1000H0z"/>
-    <path fill="#354f43" d="M0 627Q110 640 153 733T300 847Q380 940 260 1000H0z"/>
-    <path d="M183 692Q220 748 335 775T394 944" fill="none" stroke="#e0cfb0" strokeWidth="9" opacity=".75"/>
-    <g fill="none" stroke="#e2e6d8" strokeWidth="1.5" opacity=".4"><path d="M370 640q150-30 360 0"/><path d="M450 686q150-20 320 0"/><path d="M470 832q130-24 300 0"/><path d="M433 920q160-25 360 0"/></g>
-    <path d="M670 0Q610 103 663 209 M660 120q-57-12-71-58 M647 95q72-17 85-62 M658 161q60-2 85-49" fill="none" stroke="#35453d" strokeWidth="3" opacity=".6"/>
-    <g fill="#526653" opacity=".7"><ellipse cx="586" cy="60" rx="12" ry="34" transform="rotate(-35 586 60)"/><ellipse cx="729" cy="36" rx="12" ry="34" transform="rotate(35 729 36)"/><ellipse cx="740" cy="112" rx="11" ry="32" transform="rotate(50 740 112)"/></g>
-  </svg>
-}
 function ContactForm() {
   const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle')
   const [error, setError] = useState('')
@@ -129,7 +111,7 @@ export default function App() {
         <div className="section-marker"><span>02 / Philosophy</span><i/></div>
         <div className="philosophy-heading reveal"><h2 id="philosophy-title" data-copy="10">Create the life you want. <em>Enjoy the life you have.</em></h2><span className="sun-mark" aria-hidden="true">✳</span></div>
         <div className="philosophy-prose prose reveal"><Paragraphs from={11} to={15}/></div>
-        <div className="quote-landscape reveal"><img src="/images/garden-path.webp" alt="" width="1536" height="1024" loading="lazy" decoding="async"/><blockquote data-copy="16"><span className="quote-mark" aria-hidden="true">“</span>{text(16)}</blockquote><span className="quote-orbit" aria-hidden="true"/></div>
+        <div className="quote-landscape global-quote reveal"><img src="/images/global-perspective.webp" alt="" width="1536" height="1024" loading="lazy" decoding="async"/><blockquote data-copy="16"><span className="quote-mark" aria-hidden="true">“</span>{text(16)}</blockquote><span className="quote-orbit" aria-hidden="true"/></div>
       </section>
       <section className="section work" id="work-with-me" aria-labelledby="work-title">
         <div className="section-marker"><span>03 / Work With Me</span><i/></div>
@@ -142,7 +124,7 @@ export default function App() {
       </section>
       <section className="section about" id="about" aria-labelledby="about-title">
         <div className="section-marker"><span>04 / About</span><i/></div>
-        <div className="about-layout reveal"><div className="about-aside"><h2 id="about-title" data-copy="40">{text(40)}</h2><p className="serif-subtitle" data-copy="41">{text(41)}</p><figure className="portrait-placeholder"><Horizon portrait/><div className="portrait-label"><span className="portrait-monogram" aria-hidden="true">LB</span><span>Portrait of Lyla<br/><small>Photo to come</small></span></div><figcaption>Portrait placeholder · Lyla Bashan</figcaption></figure></div><div className="prose biography"><Paragraphs from={42} to={50}/></div></div>
+        <div className="about-layout reveal"><div className="about-aside"><h2 id="about-title" data-copy="40">{text(40)}</h2><p className="serif-subtitle" data-copy="41">{text(41)}</p><figure className="portrait-photo"><img src="/images/lyla-portrait.webp" alt="Lyla Bashan" width="900" height="1200" loading="lazy" decoding="async"/></figure></div><div className="prose biography"><Paragraphs from={42} to={50}/></div></div>
       </section>
       <section className="section priorities" aria-labelledby="priorities-title"><div className="priorities-inner reveal"><div className="compass-flower" aria-hidden="true"><span/><span/><span/><span/></div><h2 id="priorities-title" data-copy="51">{text(51)}</h2><div className="prose"><Paragraphs from={52} to={55}/></div></div></section>
       <section className="section faq" id="faq" aria-labelledby="faq-title"><div className="section-marker"><span>05 / FAQ</span><i/></div><div className="two-column reveal"><h2 id="faq-title" data-copy="56">{text(56)}</h2><div className="questions">{[57,59,61,63,65].map(i => <details key={i}><summary><h3 data-copy={i}>{text(i)}</h3><span aria-hidden="true" className="disclosure-icon">+</span></summary><p data-copy={i+1}>{text(i+1)}</p></details>)}</div></div></section>
