@@ -101,34 +101,33 @@ export default function App() {
         </div>
         <div className="hero-visual"><img src="/images/island-dawn.webp" srcSet="/images/island-dawn-mobile.webp 800w, /images/island-dawn.webp 1536w" sizes="100vw" width="1536" height="1024" alt="" fetchPriority="high"/><div className="hero-shade"/></div>
         <div className="hero-orbits" aria-hidden="true"><span/><span/></div>
-        <div className="hero-footnote"><a href="#philosophy">Philosophy <span aria-hidden="true">↓</span></a><span>Hawaiʻi-inspired landscape · AI-created artwork</span></div>
       </section>
       <section className="section who" aria-labelledby="who-title">
-        <div className="section-marker" aria-hidden="true"><span>01</span><i/></div>
         <div className="two-column who-story"><div className="reveal"><h2 id="who-title" data-copy="5">You can have a good life <em>and still want more from it.</em></h2><figure className="garden-window"><img src="/images/garden-path.webp" alt="Sunlight along a lush island-inspired garden path; AI-created landscape artwork." width="1024" height="1024" loading="lazy" decoding="async"/><span className="window-orbit" aria-hidden="true"/></figure></div><div className="prose reveal"><Paragraphs from={6} to={9}/></div></div>
       </section>
       <section className="section philosophy" id="philosophy" aria-labelledby="philosophy-title">
-        <div className="section-marker"><span>02 / Philosophy</span><i/></div>
-        <div className="philosophy-heading reveal"><h2 id="philosophy-title" data-copy="10">Create the life you want. <em>Enjoy the life you have.</em></h2><span className="sun-mark" aria-hidden="true">✳</span></div>
+        <div className="section-marker"><span>Philosophy</span><i/></div>
+        <div className="philosophy-heading reveal"><h2 id="philosophy-title" data-copy="10">Create the life you want. <em>Enjoy the life you have.</em></h2><svg className="globe-mark" viewBox="0 0 100 100" fill="none" aria-hidden="true"><circle cx="50" cy="50" r="34"/><ellipse cx="50" cy="50" rx="15" ry="34"/><path d="M16 50h68M22 31c17 10 39 10 56 0M22 69c17-10 39-10 56 0"/><path className="globe-orbit" d="M10 73C-5 48 68-6 89 27s-43 74-69 59"/><circle className="globe-star" cx="88" cy="26" r="3"/></svg></div>
         <div className="philosophy-prose prose reveal"><Paragraphs from={11} to={15}/></div>
         <div className="quote-landscape global-quote reveal"><img src="/images/global-perspective.webp" alt="" width="1536" height="1024" loading="lazy" decoding="async"/><blockquote data-copy="16"><span className="quote-mark" aria-hidden="true">“</span>{text(16)}</blockquote><span className="quote-orbit" aria-hidden="true"/></div>
       </section>
       <section className="section work" id="work-with-me" aria-labelledby="work-title">
-        <div className="section-marker"><span>03 / Work With Me</span><i/></div>
+        <div className="section-marker"><span>Work With Me</span><i/></div>
         <div className="two-column section-intro reveal"><h2 id="work-title" data-copy="17">{text(17)}</h2><div className="prose"><Paragraphs from={18} to={20}/></div></div>
         <ol className="steps">
-          <li className="step reveal"><span className="step-number" aria-hidden="true">01</span><div><h3 data-copy="21">{text(21)}</h3><p className="step-meta" data-copy="22">{text(22)}</p><div className="prose"><Paragraphs from={23} to={25}/></div><IntroLink/></div></li>
-          <li className="step strategy reveal"><span className="step-number" aria-hidden="true">02</span><div><h3 data-copy="27">{text(27)}</h3><p className="step-meta" data-copy="28">{text(28)}</p><div className="prose"><Paragraphs from={29} to={31}/></div><p className="includes-label" data-copy="32">{text(32)}</p><ul className="includes">{[33,34,35].map(i => { const split = text(i).indexOf(':'); return <li key={i} data-copy={i}><span className="small-mark" aria-hidden="true">↗</span><p><strong>{text(i).slice(0,split+1)}</strong>{text(i).slice(split+1)}</p></li> })}</ul></div></li>
-          <li className="step reveal"><span className="step-number" aria-hidden="true">03</span><div><h3 data-copy="36">{text(36)}</h3><div className="prose"><Paragraphs from={37} to={39}/></div></div></li>
+          <li className="step reveal"><div><h3 data-copy="21">{text(21)}</h3><p className="step-meta" data-copy="22">{text(22)}</p><div className="prose"><Paragraphs from={23} to={25}/></div><IntroLink/></div></li>
+          <li className="step strategy reveal"><div><h3 data-copy="27">{text(27)}</h3><p className="step-meta" data-copy="28">{text(28)}</p><div className="prose"><Paragraphs from={29} to={31}/></div><p className="includes-label" data-copy="32">{text(32)}</p><ul className="includes">{[33,34,35].map(i => { const split = text(i).indexOf(':'); return <li key={i} data-copy={i}><span className="small-mark" aria-hidden="true">↗</span><p><strong>{text(i).slice(0,split+1)}</strong>{text(i).slice(split+1)}</p></li> })}</ul></div></li>
+          <li className="step reveal"><div><h3 data-copy="36">{text(36)}</h3><div className="prose"><Paragraphs from={37} to={39}/></div></div></li>
         </ol>
       </section>
       <section className="section about" id="about" aria-labelledby="about-title">
-        <div className="section-marker"><span>04 / About</span><i/></div>
-        <div className="about-layout reveal"><div className="about-aside"><h2 id="about-title" data-copy="40">{text(40)}</h2><p className="serif-subtitle" data-copy="41">{text(41)}</p><figure className="portrait-photo"><img src="/images/lyla-portrait.webp" alt="Lyla Bashan" width="900" height="1200" loading="lazy" decoding="async"/></figure></div><div className="prose biography"><Paragraphs from={42} to={50}/></div></div>
+        <div className="section-marker"><span>About</span><i/></div>
+        <div className="about-heading"><h2 id="about-title" data-copy="40">{text(40)}</h2><p className="serif-subtitle" data-copy="41">{text(41)}</p></div>
+        <div className="about-layout"><div className="about-aside"><figure className="portrait-photo"><img src="/images/lyla-portrait.webp" alt="Lyla Bashan" width="900" height="1200" loading="lazy" decoding="async"/></figure></div><div className="prose biography"><Paragraphs from={42} to={50}/></div></div>
       </section>
-      <section className="section priorities" aria-labelledby="priorities-title"><div className="priorities-inner reveal"><div className="compass-flower" aria-hidden="true"><span/><span/><span/><span/></div><h2 id="priorities-title" data-copy="51">{text(51)}</h2><div className="prose"><Paragraphs from={52} to={55}/></div></div></section>
-      <section className="section faq" id="faq" aria-labelledby="faq-title"><div className="section-marker"><span>05 / FAQ</span><i/></div><div className="two-column reveal"><h2 id="faq-title" data-copy="56">{text(56)}</h2><div className="questions">{[57,59,61,63,65].map(i => <details key={i}><summary><h3 data-copy={i}>{text(i)}</h3><span aria-hidden="true" className="disclosure-icon">+</span></summary><p data-copy={i+1}>{text(i+1)}</p></details>)}</div></div></section>
-      <section className="section contact" id="contact" aria-labelledby="contact-title"><div className="section-marker"><span>06 / Contact</span><i/></div><div className="two-column"><div><h2 id="contact-title" data-copy="67">{text(67)}</h2><div className="prose"><Paragraphs from={68} to={71}/></div></div><ContactForm/></div></section>
+      <section className="section priorities" aria-labelledby="priorities-title"><div className="priorities-inner reveal"><svg className="lotus-mark" viewBox="0 0 120 90" fill="none" aria-hidden="true"><path d="M60 71C39 58 38 36 60 12c22 24 21 46 0 59Z"/><path d="M59 71C33 73 15 53 17 29c28 2 43 19 42 42ZM61 71c26 2 44-18 42-42-28 2-43 19-42 42Z"/><path d="M58 73C30 86 10 72 5 51c23-6 42 3 53 22ZM62 73c28 13 48-1 53-22-23-6-42 3-53 22Z"/><path d="M28 84h64"/></svg><h2 id="priorities-title" data-copy="51">{text(51)}</h2><div className="prose"><Paragraphs from={52} to={55}/></div></div></section>
+      <section className="section faq" id="faq" aria-labelledby="faq-title"><div className="section-marker"><span>FAQ</span><i/></div><div className="two-column reveal"><h2 id="faq-title" data-copy="56">{text(56)}</h2><div className="questions">{[57,59,61,63,65].map(i => <details key={i}><summary><h3 data-copy={i}>{text(i)}</h3><span aria-hidden="true" className="disclosure-icon">+</span></summary><p data-copy={i+1}>{text(i+1)}</p></details>)}</div></div></section>
+      <section className="section contact" id="contact" aria-labelledby="contact-title"><div className="section-marker"><span>Contact</span><i/></div><div className="two-column"><div><h2 id="contact-title" data-copy="67">{text(67)}</h2><div className="prose"><Paragraphs from={68} to={71}/></div></div><ContactForm/></div></section>
     </main>
     <footer className="footer"><div className="footer-top"><a href="#top" className="footer-brand" data-copy="80">{text(80)}</a><p className="footer-tagline" data-copy="81">{text(81)}</p></div><p className="footer-location" data-copy="82">{text(82)}</p><div className="footer-bottom"><p data-copy="83">{text(83)}</p><p data-copy="84">{text(84)}</p><a href="#top">Back to top ↑</a></div></footer>
   </>

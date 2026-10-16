@@ -3,8 +3,8 @@ import { createHash } from 'node:crypto'
 import assert from 'node:assert/strict'
 const copy = JSON.parse(readFileSync('src/copy.json', 'utf8'))
 const hash = createHash('sha256').update(JSON.stringify(copy)).digest('hex')
-// Baseline comes from the supplied approved copy, removing only its duplicated About heading pair.
-assert.equal(hash, 'ff3733d897b234cf07b9304a102f0f2bc2e201fde4e89a81afc0fe433484a5af', 'Approved copy changed: review against the authoritative document before updating this baseline.')
+// Baseline: approved master copy with its duplicate About heading removed, plus the owner-requested diplomatic-skills biography amendment.
+assert.equal(hash, 'e75b5caf14d8f99b8c5bd8c9733623275dddae47111c4675aa30e9579e2dccff', 'Approved copy changed: review against the authoritative document before updating this baseline.')
 assert.equal(copy.length, 85)
 assert.equal(copy.filter(p => p === 'Meet Lyla.').length, 1)
 assert(copy.some(p => p.includes('two decades as a U.S. diplomat')))

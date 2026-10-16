@@ -39,11 +39,11 @@ scripts/check-copy.mjs     Copy and deployment-contract verification
 netlify.toml               Build settings, Node version, security headers
 ```
 
-Approved copy was transcribed verbatim from the supplied master prompt. The duplicate About heading pair is displayed once. Editorial CTA brackets and the `Contact form:` instruction are omitted from visible prose. The single-page reading order follows the source. Site controls, artwork labels, and honest form feedback are functional UI text.
+Approved copy follows the supplied master prompt, with the owner-requested diplomatic-skills biography amendment recorded in `src/copy.json`. The duplicate About heading pair is displayed once. Editorial CTA brackets and the `Contact form:` instruction are omitted from visible prose. The single-page reading order follows the source. Site controls, artwork labels, and honest form feedback are functional UI text.
 
 ## Visual assets and fonts
 
-The hero and garden imagery are original AI-created landscape artworks, optimized as locally hosted WebP assets. They evoke island coastlines and gardens without claiming to document a specific real location. The hero image is visibly identified as AI-created artwork; the garden image has an equivalent accessible description. The About portrait is the owner-supplied relaxed garden headshot, optimized without retouching. See `public/images/ASSETS.md` for generation prompts and provenance. Portrait source and replacement instructions are in `public/images/README.md`. Licensed photography is optional; the site is complete without it. No images, code, or branding assets were copied from the broad reference website.
+The hero and garden imagery are original AI-created landscape artworks, optimized as locally hosted WebP assets. They evoke island coastlines and gardens without claiming to document a specific real location. The scenery provenance is documented here and in `public/images/ASSETS.md`; the hero caption was removed at the owner’s request. The About portrait is the owner-supplied warm teal garden portrait, optimized without retouching. See `public/images/ASSETS.md` for generation prompts and provenance. Portrait source and replacement instructions are in `public/images/README.md`. Licensed photography is optional; the site is complete without it. No images, code, or branding assets were copied from the broad reference website.
 
 Cormorant Garamond and DM Sans are bundled locally through Fontsource packages, with only Latin weights used by the page imported. They are licensed under the SIL Open Font License; see the license notices distributed in `public/licenses/`. No third-party font requests are made. System fallbacks are available.
 
