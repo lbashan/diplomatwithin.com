@@ -2,6 +2,10 @@
 
 A complete, responsive single-page personal advisory website for Lyla Bashan. React, Vite, TypeScript, and Tailwind CSS. No analytics, booking tools, prices, or invented client claims. No live-domain deployment was performed as part of implementation.
 
+## Launch handoff
+
+The approved website is ready for review/merge in [pull request #1](https://github.com/lbashan/diplomatwithin.com/pull/1). See [DEPLOYMENT.md](DEPLOYMENT.md) for beginner-friendly merge, temporary Netlify deployment, and form notification steps; [FINAL_CHECKS.md](FINAL_CHECKS.md) records verification results and remaining deployment tests. Nothing has been merged or deployed automatically.
+
 ## Run and preview
 
 Use Node.js 22.12 or newer (Node 22 LTS recommended) and npm.
@@ -68,7 +72,7 @@ The contact form requests a **complimentary 20-minute introductory conversation*
 - Local Vite dev/preview does **not** handle Netlify Forms. Local submissions deliberately show an explanatory error and offer email. A local HTTP 200 must not be mistaken for a delivered inquiry.
 - After Netlify deployment, enable **Forms → Form detection** in the Netlify project if necessary, then redeploy. Check that `introductory-conversation` appears in Forms.
 - On the deployed `.netlify.app` site, submit a clearly identified test inquiry with an address you control. Verify the success message, then confirm the actual submission in **Forms → introductory-conversation → Verified submissions**. Also check the Spam list and mark a legitimate test as verified if needed. A successful response reports receipt by the form endpoint; it does not guarantee an email notification.
-- Configure **Project configuration → Notifications → Form submission notifications** (or the form's notification settings) and add an email notification to **lyla@diplomatwithin.com** for this form. Send another test and verify inbox and junk folders. Notifications do not work until you configure them; verify account plan limits and mailbox delivery separately.
+- Configure **Forms → Submission notifications → Add notification** (or project form notification settings) and add an email notification to **lyla@diplomatwithin.com** for this form. Send another test and verify inbox and junk folders. Notifications do not work until you configure them; verify account plan limits and mailbox delivery separately.
 - Test a network failure using browser offline mode: the form must show an error and preserve entered values. Restore connectivity and retry. An HTTP error must never display the success message.
 - The honeypot helps with spam, but requires monitoring. Review Netlify submissions, spam, usage limits, and retention as part of ongoing site administration.
 

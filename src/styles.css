@@ -254,3 +254,14 @@
   .about .portrait-photo { width: calc(100% - 26px); max-width: 380px; margin: 0 auto; }
   .biography { padding-bottom: 20px; }
 }
+
+/* Dual-tone keyboard focus remains visible on both ivory and dark sections. */
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #a54d35;
+  outline-offset: 4px;
+  box-shadow: 0 0 0 4px #f4f0e8;
+}
