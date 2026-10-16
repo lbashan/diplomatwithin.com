@@ -34,6 +34,7 @@ public/favicon.svg         Original minimal horizon mark, not a supplied brand l
 public/robots.txt          Crawler instructions
 public/sitemap.xml         Production homepage sitemap
 public/images/README.md    Portrait and optional photography instructions
+public/images/ASSETS.md    Original generated scenery provenance and prompts
 scripts/check-copy.mjs     Copy and deployment-contract verification
 netlify.toml               Build settings, Node version, security headers
 ```
@@ -42,7 +43,7 @@ Approved copy was transcribed verbatim from the supplied master prompt. The dupl
 
 ## Visual assets and fonts
 
-The scenery is an original inline SVG illustration inspired by island coastlines, not a photograph or a depiction of Lyla. The portrait is clearly labeled as a placeholder. Add a real portrait following `public/images/README.md`. Licensed photography is optional; the site is complete without it. No images, code, or branding assets were copied from the broad reference website.
+The hero and garden imagery are original AI-created landscape artworks, optimized as locally hosted WebP assets. They evoke island coastlines and gardens without claiming to document a specific real location. The hero image is visibly identified as AI-created artwork; the garden image has an equivalent accessible description. The illustrated portrait placeholder is not a depiction of Lyla. See `public/images/ASSETS.md` for generation prompts and provenance. The portrait is clearly labeled as a placeholder. Add a real portrait following `public/images/README.md`. Licensed photography is optional; the site is complete without it. No images, code, or branding assets were copied from the broad reference website.
 
 Cormorant Garamond and DM Sans are bundled locally through Fontsource packages, with only Latin weights used by the page imported. They are licensed under the SIL Open Font License; see the license notices distributed in `public/licenses/`. No third-party font requests are made. System fallbacks are available.
 
