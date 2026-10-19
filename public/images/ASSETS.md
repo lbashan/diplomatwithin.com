@@ -23,3 +23,11 @@ Use case: photorealistic-natural. Create an original high-end editorial landscap
 Exact generation prompt:
 
 Create an original wide cinematic editorial still-life artwork for the quote section of a sophisticated personal life advisory website with a former diplomat's global perspective. Horizontal 3:2 composition. An elegant worn globe with accurate recognizable continental silhouettes, open vintage world atlas, folded cream linen, and a small understated brass compass on a dark warm wooden desk next to a tall window; soft warm late-afternoon light and shadows, a softly out-of-focus cosmopolitan old-world city visible through the window. Intimate, thoughtful, worldly and inspirational, a life of curiosity and possibility, not corporate consulting. Deep ocean teal and forest shadows, warm sand paper, patinated brass details. Globe prominently positioned in right third; left and middle mostly uncluttered dark atlas/paper texture with low detail and ample calm space for ivory quote overlay. Photographic realism with subtle fine-art atmosphere and rich tactile texture. No people, no plants, no nature scene, no flags, no passports, no coffee, no luggage, no readable text or lettering, no logos, no watermark. Not a collage, not a digital tech network, not glowing globe. This is original AI-created conceptual art.
+
+
+## October 19, 2026 replacements
+
+- `lyla-portrait-oct19.webp`: owner-supplied WhatsApp Image 2026-10-19 at 06.52.59.jpeg. EXIF orientation respected, resized to 900 × 1200 and encoded as WebP; no generative editing or retouching.
+- `coastal-perspective.webp`: generated with the built-in Imagegen tool, replacing the garden path. Prompt: “Sophisticated natural editorial photograph of a dramatic Pacific coastal overlook: sculptural dark volcanic rock in foreground, expansive deep teal ocean, distant green headland, quiet open sky, subtle warm late-afternoon light. Square composition usable in a vertical arched crop; restrained fine-art travel photography, inspiring through spaciousness and possibility. No people, paths, staged props, text, logos, exaggerated sunset, or oversaturation.” This is an illustrative generated scene, not location documentation.
+
+- `diplomat-within-logo.png`: owner-supplied Abstract Teal Spiral Emblem.png, copied unchanged and displayed as the header emblem. No image generation or logo redesign.

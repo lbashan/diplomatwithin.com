@@ -31,7 +31,7 @@ Open the printed preview URL (normally http://127.0.0.1:4173). `build` typecheck
 ```text
 index.html                 SEO/social metadata + static Netlify form declaration
 src/App.tsx                Semantic sections, mobile navigation, FAQ, contact form
-src/copy.json              Approved text, in order; documented About duplicate removed
+src/copy.json              Revised approved copy, grouped by section and field
 src/styles.css             Responsive design, tokens, typography, reduced motion
 src/main.tsx               React entry point and self-hosted fonts
 public/favicon.svg         Original minimal horizon mark, not a supplied brand logo
@@ -43,7 +43,7 @@ scripts/check-copy.mjs     Copy and deployment-contract verification
 netlify.toml               Build settings, Node version, security headers
 ```
 
-Approved copy follows the supplied master prompt, with the owner-requested diplomatic-skills biography amendment recorded in `src/copy.json`. The duplicate About heading pair is displayed once. Editorial CTA brackets and the `Contact form:` instruction are omitted from visible prose. The single-page reading order follows the source. Site controls, artwork labels, and honest form feedback are functional UI text.
+Approved copy follows the revised October 18, 2026 prompt, recorded in `src/copy.json` as structured section entries. All nine sections follow the supplied reading order. Internal positioning and implementation instructions are excluded from visible prose. Site controls, artwork labels, and form feedback are functional UI text. See REVIEW.md for the current review and verification results.
 
 ## Visual assets and fonts
 
