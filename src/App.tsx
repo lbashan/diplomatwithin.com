@@ -103,7 +103,7 @@ export default function App() {
         </div>
         <div className="hero-visual"><img src="/images/island-dawn.webp" srcSet="/images/island-dawn-mobile.webp 800w, /images/island-dawn.webp 1536w" sizes="100vw" width="1536" height="1024" alt="" fetchPriority="high"/><div className="hero-shade"/></div>
       </section>
-      <section className="section who" aria-labelledby="who-title"><div className="two-column who-story"><div><h2 id="who-title">{heading(1)}</h2><figure className="garden-window"><img src="/images/coastal-perspective.webp" alt="Expansive teal ocean and sculptural volcanic coastline; AI-created editorial image." width="1024" height="1024" loading="lazy"/></figure></div><div className="prose"><Entry section={1} label="Body"/></div></div></section>
+      <section className="section who" aria-labelledby="who-title"><div className="two-column who-story"><div><h2 id="who-title">{heading(1)}</h2><figure className="garden-window"><img src="/images/cycling-landscape-oct20.webp" alt="Two cyclists ride beside sunlit fields and reflective water, with mountains in the distance." width="1170" height="1443" loading="lazy"/></figure></div><div className="prose"><Entry section={1} label="Body"/></div></div></section>
       <section className="section approach" id="approach" aria-labelledby="approach-title">
         <div className="section-marker"><span>The Approach</span><i/></div>
         <div className="two-column"><h2 id="approach-title">{heading(2)}</h2><div className="prose"><Entry section={2} label="Body"/></div></div>

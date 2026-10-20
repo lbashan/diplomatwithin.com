@@ -33,3 +33,5 @@ Create an original wide cinematic editorial still-life artwork for the quote sec
 - `diplomat-within-logo.png`: owner-supplied Abstract Teal Spiral Emblem.png, copied unchanged and displayed as the header emblem. No image generation or logo redesign.
 
 - `lyla-portrait-oct20.webp`: owner-supplied IMG_0321.heic, converted with macOS, cropped to the existing 3:4 portrait frame, resized to 900 × 1200, and encoded as WebP. No retouching. Replaces the October 19 biography portrait.
+
+- `cycling-landscape-oct20.webp`: owner-supplied IMG_0328.jpg, optimized as WebP without retouching. Replaces the coastal illustration under “You can have a good life and still want more from it.”
