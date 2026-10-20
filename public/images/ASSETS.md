@@ -31,3 +31,5 @@ Create an original wide cinematic editorial still-life artwork for the quote sec
 - `coastal-perspective.webp`: generated with the built-in Imagegen tool, replacing the garden path. Prompt: “Sophisticated natural editorial photograph of a dramatic Pacific coastal overlook: sculptural dark volcanic rock in foreground, expansive deep teal ocean, distant green headland, quiet open sky, subtle warm late-afternoon light. Square composition usable in a vertical arched crop; restrained fine-art travel photography, inspiring through spaciousness and possibility. No people, paths, staged props, text, logos, exaggerated sunset, or oversaturation.” This is an illustrative generated scene, not location documentation.
 
 - `diplomat-within-logo.png`: owner-supplied Abstract Teal Spiral Emblem.png, copied unchanged and displayed as the header emblem. No image generation or logo redesign.
+
+- `lyla-portrait-oct20.webp`: owner-supplied IMG_0321.heic, converted with macOS, cropped to the existing 3:4 portrait frame, resized to 900 × 1200, and encoded as WebP. No retouching. Replaces the October 19 biography portrait.
